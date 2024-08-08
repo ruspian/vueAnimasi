@@ -1,16 +1,17 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
+import { RouterLink } from "vue-router";
 </script>
 
 <template>
-  <div>
+  <header class="container">
     <RouterLink :active-class="'active'" to="/">Home</RouterLink>
     <RouterLink :active-class="'active'" to="/about">About</RouterLink>
-  </div>
+  </header>
 </template>
 
 <style scoped>
-div {
+header {
+  padding: 20px;
   display: flex;
   gap: 20px;
 }
